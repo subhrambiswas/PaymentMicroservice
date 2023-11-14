@@ -1,0 +1,81 @@
+package com.registration;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class UserDetails {
+	
+	
+	@Column(name = "First_Name")
+	private String name;
+	
+	@Column(name = "Last_Name")
+	private String surname;
+	
+	@Id
+	private long uniqueIdentifierNumber;
+	
+	@Column(name = "Phone_Number")
+	private String phoneno;
+	
+	@Column(name = "Payment_Type")
+	private String paymentInstrument;
+	
+	@Column(name = "Email_Id")
+	private String emailId;
+	
+//	@Column(name = "Address")
+//	private AddressDetails address;
+//	
+//	
+//	public AddressDetails getAddress() {
+//		return address;
+//	}
+//	public void setAddress(AddressDetails address) {
+//		this.address = address;
+//	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public long getUniqueIdentifierNumber() {
+		return uniqueIdentifierNumber;
+	}
+	public void setUniqueIdentifierNumber(long uniqueIdentifierNumber) {
+		this.uniqueIdentifierNumber = uniqueIdentifierNumber;
+	}
+	public String getPhoneno() {
+		return phoneno;
+	}
+	public void setPhoneno(String phoneno) {
+		this.phoneno = phoneno;
+	}
+	public String getPaymentInstrument() {
+		return paymentInstrument;
+	}
+	public void setPaymentInstrument(String paymentInstrument) {
+		this.paymentInstrument = paymentInstrument;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	
+	
+	
+	
+
+}

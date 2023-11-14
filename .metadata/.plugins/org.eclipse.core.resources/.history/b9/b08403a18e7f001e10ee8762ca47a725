@@ -1,0 +1,73 @@
+package com.registration;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class AddressDetails {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "Pincode")
+    private long pinCode;
+	
+	@Column(name = "House_No")
+	private String house;
+	
+	@Column(name = "street_name")
+	private String street;
+	
+	
+	@Column(name = "City_name")
+    private String city;
+	
+	@Column(name = "State_name")
+    private String state;
+	
+	@Column(name = "Country_name")
+    private String country;
+    
+    
+    public String getHouse() {
+		return house;
+	}
+	public void setHouse(String house) {
+		this.house = house;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public long getPinCode() {
+		return pinCode;
+	}
+	public void setPinCode(long pinCode) {
+		this.pinCode = pinCode;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getState() {
+		return state;
+	}
+	public void setState(String state) {
+		this.state = state;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+	
+}

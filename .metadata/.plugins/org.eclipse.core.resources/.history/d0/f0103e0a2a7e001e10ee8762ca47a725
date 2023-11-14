@@ -1,0 +1,62 @@
+package com.registration;
+
+public class userDetails {
+	
+	private String name;
+	private String surname;
+	private double uniqueIdentifierNumber;
+	private String phoneno;
+	private String paymentInstrument;
+	private String emailId;
+	private AddressDetails address;
+	
+	
+	public AddressDetails getAddress() {
+		return address;
+	}
+	public void setAddress(AddressDetails address) {
+		this.address = address;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSurname() {
+		return surname;
+	}
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+	public double getUniqueIdentifierNumber() {
+		return uniqueIdentifierNumber;
+	}
+	public void setUniqueIdentifierNumber(double uniqueIdentifierNumber) {
+		this.uniqueIdentifierNumber = uniqueIdentifierNumber;
+	}
+	public String getPhoneno() {
+		return phoneno;
+	}
+	public void setPhoneno(String phoneno) {
+		this.phoneno = phoneno;
+	}
+	public String getPaymentInstrument() {
+		return paymentInstrument;
+	}
+	public void setPaymentInstrument(String paymentInstrument) {
+		this.paymentInstrument = paymentInstrument;
+	}
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	
+	
+	
+	
+
+}

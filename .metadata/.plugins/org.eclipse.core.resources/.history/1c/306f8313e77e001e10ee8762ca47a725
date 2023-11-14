@@ -1,0 +1,13 @@
+package com.registration;
+
+public class CardRegistrationService {
+
+	RegistrationRepository registrationrepository;
+	
+	public void saveOrUpdate(UserDetails userdetails) {
+		// TODO Auto-generated method stub
+		
+		registrationrepository.save(userdetails);
+	}
+
+}

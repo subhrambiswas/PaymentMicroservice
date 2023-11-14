@@ -1,0 +1,16 @@
+package com.registration;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class CardRegistrationService {
+
+	RegistrationRepository registrationrepository;
+	
+	public void saveOrUpdate(UserDetails userdetails) {
+		// TODO Auto-generated method stub
+		
+		registrationrepository.save(userdetails);
+	}
+
+}

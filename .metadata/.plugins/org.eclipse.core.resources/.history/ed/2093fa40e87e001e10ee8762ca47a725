@@ -1,0 +1,20 @@
+package com.registration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CardsRegistrationController {
+
+	private CardRegistrationService cardregistrationservice;
+	
+    @PostMapping("/customer-registration")
+    private  void saveBook(@RequestBody UserDetails userdetails)
+    {
+
+    	cardregistrationservice.saveOrUpdate(userdetails);
+    }
+	
+}
